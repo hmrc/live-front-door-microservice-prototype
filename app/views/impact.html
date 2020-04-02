@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="business-priority-level">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form class="form" action="explanation" method="post">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h1 class="govuk-heading-xl">What is the availability of the service</h1>
+                    </legend>
+                    <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="Available" name="Available" type="radio" value="Available">
+                            <label class="govuk-label govuk-radios__label" for="Available">
+                                Available
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="Unavailable" name="Unavailable" type="radio" value="Unavailable">
+                            <label class="govuk-label govuk-radios__label" for="Unavailable">
+                                Unavailable
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="Partially-Available" name="Partially-Available" type="radio" value="Partially-Available">
+                            <label class="govuk-label govuk-radios__label" for="Partially-Available">
+                                Partially Available
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="govuk-form-group" style="padding-top:50px">
+                    <label class="govuk-label" for="Impacted-users">
+                        <h1 class="govuk-heading-xl">How many users are impacted</h1>
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="Impacted-users" name="Impacted-users" type="text">
+                </div>
+
+            </div>
+
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
