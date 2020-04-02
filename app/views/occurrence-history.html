@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/live-services-area.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Request Live Service Investigation</h1>
+
+    <form class="form" action="/business-priority-level" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="issue-start-date-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              When did the issue start?
+            </h1>
+          </legend>
+          <span id="issue-start-date-hint" class="govuk-hint">
+      For example, 20 03 2020
+    </span>
+          <div class="govuk-date-input" id="issue-start-date">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="issue-start-date-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="issue-start-date-day" name="issue-start-date-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="issue-start-date-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="issue-start-date-month" name="issue-start-date-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="issue-start-date-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="issue-start-date-year" name="issue-start-date-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!--        <div class="govuk-form-group">-->
+      <!--          <fieldset class="govuk-fieldset" aria-describedby="occurred-previously-hint">-->
+      <!--            <legend class="govuk-fieldset__legend govuk-fieldset__legend&#45;&#45;l">-->
+      <!--              <h1 class="govuk-fieldset__heading">-->
+      <!--                Has this issue happened before?-->
+      <!--              </h1>-->
+      <!--            </legend>-->
+      <!--            <span id="changed-name-hint" class="govuk-hint">-->
+      <!--      hint to be updated if required.-->
+      <!--    </span>-->
+      <!--            <div class="govuk-radios govuk-radios&#45;&#45;inline">-->
+      <!--              <div class="govuk-radios__item">-->
+      <!--                <input class="govuk-radios__input" id="occurred-previously?" name="occurred-previously?" type="radio" value="yes">-->
+      <!--                <label class="govuk-label govuk-radios__label" for="occurred-previously?">-->
+      <!--                  Yes-->
+      <!--                </label>-->
+
+      <!--              </div>-->
+      <!--              <div class="govuk-radios__item">-->
+      <!--                <input class="govuk-radios__input" id="occurred-previously?-2" name="occurred-previously?" type="radio" value="no">-->
+      <!--                <label class="govuk-label govuk-radios__label" for="occurred-previously?-2">-->
+      <!--                  No-->
+      <!--                </label>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </fieldset>-->
+      <!--        </div>-->
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="occurred-previously-conditional-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Has this issue happened before?
+            </h1>
+          </legend>
+          <span id="how-contacted-conditional-hint" class="govuk-hint">
+      Select one option.
+    </span>
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="occurred-previously-conditional" name="occurred-previously" type="radio" value="email" data-aria-controls="conditional-occurred-previously-conditional">
+              <label class="govuk-label govuk-radios__label" for="occurred-previously-conditional">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-occurred-previously-conditional">
+              <div class="govuk-form-group">
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="more-detail">
+                    Can you provide more detail?
+                  </label>
+                  <span id="more-detail-hint" class="govuk-hint">
+                      Optional: Provide any further detail that may be relevant.
+                    </span>
+                  <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                     You can enter up to 200 characters
+                    </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="occurred-previously-2" name="occurred-previously" type="radio" value="phone" data-aria-controls="occurred-previously-2">
+              <label class="govuk-label govuk-radios__label">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
