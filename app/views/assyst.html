@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="evidence">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form class="form" action="who-is-the-DSM" method="post">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="assyst-Y-N-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h1 class="govuk-fieldset__heading">
+                            Has an Assyst been raised?
+                        </h1>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="assyst-Y" name="assyst-Y" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="assyst-Y">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="assyst-N" name="assyst-N" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="assyst-N">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="assyst-reference">
+                    If so please give the reference number
+                </label>
+                <textarea class="govuk-textarea" id="assyst-reference" name="assyst-reference" rows="1" aria-describedby="assyst-reference-hint"></textarea>
+            </div>
+
+
+
+
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="CE-OCC-Y-N-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h1 class="govuk-fieldset__heading">
+                            Has the CE-OCC been notified?
+                        </h1>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="CE-OCC-Y" name="CE-OCC-Y" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="CE-OCC-Y">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="CE-OCC-N" name="CE-OCC-N" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="CE-OCC-N">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="assyst-reference">
+                    If so please give the details below
+                </label>
+                <textarea class="govuk-textarea" id="CE-OCC-reference" name="CE-OCC-reference" rows="3" aria-describedby="CE-OCC-reference-hint"></textarea>
+            </div>
+
+
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
