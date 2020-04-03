@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="request-live-service-investigation.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Request Live Service Investigation</h1>
+
+    <form class="form" action="occurrence-history" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which area of Live Services is your request for?
+            </h1>
+          </legend>
+          <span id="live-services-area-hint" class="govuk-hint">
+            This is the team that manage the service.
+            </span>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="live-services-area" name="live-services-area" type="radio" value="newcastle-1">
+              <label class="govuk-label govuk-radios__label" for="live-services-area">
+                Newcastle LS Team 1
+              </label>
+
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="live-services-area-2" name="live-services-area" type="radio" value="newcastle-2">
+              <label class="govuk-label govuk-radios__label" for="live-services-area-2">
+                Newcastle LS Team 2
+              </label>
+
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="live-services-area-3" name="live-services-area" type="radio" value="other">
+              <label class="govuk-label govuk-radios__label" for="live-services-area-3">
+                Other centre/team
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <!--          <h1>The datalist element</h1>-->
+
+      <!--          <form action="/action_page.php" method="get">-->
+      <!--              <input list="browsers" name="browser">-->
+      <!--              <datalist id="browsers">-->
+      <!--                  <option value="Internet Explorer">-->
+      <!--                  <option value="Firefox">-->
+      <!--                  <option value="Chrome">-->
+      <!--                  <option value="Opera">-->
+      <!--                  <option value="Safari">-->
+      <!--              </datalist>-->
+      <!--              <input type="submit">-->
+      <!--          </form>-->
+
+      <div class="govuk-form-group">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading" for="dynamic-service-list">
+            What Service or system is affected?   <p>(apply filtering of requests by service)</p>
+          </h1>
+        </legend>
+        <select class="govuk-select" id="dynamic-service-list" name="dynamic-service-list">
+          val newcastle1List : List[String] = "abc", "bcd", "cde"
+
+          <option value="">Select a service</option>
+          <option value="serivce-1">NCL T1 Service(s)</option>
+          <option value="serivce-1">NCL T2 Service(s)</option>
+          <option value="serivce-1">Other Service(s)</option>
+        </select>
+      </div>
+
+      <div class="govuk-form-group">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            What is the notification channel?
+          </h1>
+        </legend>
+        <span id="notification-channel-hint" class="govuk-hint">
+                  State the origin of the request, for example, desk pro or legislative change.
+  </span>
+        <input class="govuk-input" id="notification-channel" name="notification-channel" type="text" aria-describedby="notification-channel-hint">
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

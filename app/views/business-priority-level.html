@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Question page
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="occurence-history">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Request Live Service Investigation</h1>
+
+    <form class="form" action="impact" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What is the business priority level?
+            </h1>
+          </legend>
+
+          <p>To ensure the highest priority requests are assessed accurately and actioned accordingly,
+            please assign your request as accurately as possible using the following descriptions as guidance.</p>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business-priority" name="business-priority" type="radio" value="high">
+              <label class="govuk-label govuk-radios__label" for="business-priority">
+                Low
+              </label>
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What does low priority mean?
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                  Select if request resembles any of the following:
+                  <ul>
+                    <li>between 1-9 reports of users affected</li>
+                    <li>service failures of up to 9% </li>
+                    <li>legislative changes with non imminent deadlines, for example; a deadline of over three months would be categorised as medium priority.</li>
+                  </ul>
+                </div>
+              </details>
+
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business-priority-2" name="business-priority" type="radio" value="medium">
+              <label class="govuk-label govuk-radios__label" for="business-priority-2">
+                Medium
+              </label>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What does medium priority mean?
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                  Select if request resembles any of the following:
+                  <ul>
+                    <li>49 or more reports of users affected</li>
+                    <li>service failures of between 10-49% </li>
+                    <li>legislative changes with non imminent deadlines, for example; a deadline of upto six weeks would be categorised as medium priority.</li>
+                  </ul>
+                </div>
+              </details>
+
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business-priority-3" name="where-do-you-live" type="radio" value="high">
+              <label class="govuk-label govuk-radios__label" for="business-priority-3">
+                High
+              </label>
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What does high priority mean?
+    </span>
+                </summary>
+                <div class="govuk-details__text">
+                  Select if request resembles any of the following:
+                  <ul>
+                    <li>50 or more reports of users affected</li>
+                    <li>service failures in excess of 50% </li>
+                    <li>legislative changes with imminent deadlines, for example; a deadline of: immediate to one month would be categorised as high priority.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <button class="govuk-button" data-module="govuk-button">Continue</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
