@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/confirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +24,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZtILijR0WOtkCCvm7maYfR4oOK" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -48,18 +44,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
@@ -108,14 +92,18 @@
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="485" y="183" width="1016" height="738" key="SettingsEditor/67.27.1853.1052@67.27.1853.1052" timestamp="1585816042870" />
+    <state x="167" y="109" width="1653" height="862" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585900657816">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="167" y="109" width="1653" height="862" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1585900657816" />
     <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1585815887322">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="653" y="361" key="com.intellij.ide.util.TipDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1585815887322" />
-    <state x="660" y="140" width="662" height="743" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585749759175">
+    <state x="660" y="60" width="662" height="743" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585901919933">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
-    <state x="660" y="140" width="662" height="743" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1052@67.27.1853.1052" timestamp="1585749759175" />
+    <state x="660" y="60" width="662" height="743" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1052@67.27.1853.1052" timestamp="1585901919933" />
     <state x="639" y="156" width="709" height="783" key="find.popup" timestamp="1585816184403">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
