@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="" />
+    <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +48,18 @@
       <recent name="$PROJECT_DIR$/app/views" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -65,6 +80,9 @@
       <updated>1585651909207</updated>
       <workItem from="1585836879553" duration="1510000" />
       <workItem from="1585838974501" duration="942000" />
+      <workItem from="1585906890830" duration="1281000" />
+      <workItem from="1588673658561" duration="45000" />
+      <workItem from="1588676300682" duration="870000" />
     </task>
     <servers />
   </component>
