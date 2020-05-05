@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/landing-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/live-service-interface.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/live-services-log-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/progress-chasing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/request-live-service-investigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/request-live-service-investigation.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +87,7 @@
       <workItem from="1585838974501" duration="942000" />
       <workItem from="1585906890830" duration="1281000" />
       <workItem from="1588673658561" duration="45000" />
-      <workItem from="1588676300682" duration="870000" />
+      <workItem from="1588676300682" duration="6684000" />
     </task>
     <servers />
   </component>
