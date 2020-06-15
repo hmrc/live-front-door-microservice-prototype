@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc33e1d-0254-469a-920e-60b9be52d52c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/landing-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/live-service-interface.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/live-services-log-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/progress-chasing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/request-live-service-investigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/request-live-service-investigation.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +12,11 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../attachments" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -88,6 +88,10 @@
       <workItem from="1585906890830" duration="1281000" />
       <workItem from="1588673658561" duration="45000" />
       <workItem from="1588676300682" duration="6684000" />
+      <workItem from="1589370934623" duration="2055000" />
+      <workItem from="1589443071088" duration="1937000" />
+      <workItem from="1591181378152" duration="8000" />
+      <workItem from="1591343496377" duration="619000" />
     </task>
     <servers />
   </component>
